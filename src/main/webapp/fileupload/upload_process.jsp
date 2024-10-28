@@ -1,6 +1,8 @@
+<%@page import="java.io.File"%>
+<%@page import="com.oreilly.servlet.MultipartRequest"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"
-    info=""
+    info="multipart/form-data 인 경우 web parameter가 전달되지 X"
     %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
@@ -33,7 +35,24 @@ $(function(){
 <body>
 
 <div id="wrap">
-	testtesttesttest
+<%-- 
+web parameter가 전달되지 X
+업로더: <%= request.getParameter("uploader") %><br/>
+EL: ${ param.uploader }<br/>
+ --%>
+요청방식: <%= request.getMethod() %><br/>
+<%
+	//1. 업로드 파일을 저장할 디렉토리를 생성하고 경로 얻기
+ 	File file = new File("C:/dev/workspace/jsp_prj/src/main/webapp/upload");
+	
+	//2. 업로드할 파일의 최대 크기 설정 (byte > KByte > MByte > GByte > TByte)
+	int maxSize = 1024 * 1024 * 1;	//byte * KByte * ? MByte
+	
+	//3. File upload Component를 생성 - 생성과 동시에 파일이 업로드 됨
+	
+	
+%>
+ 
 </div>
 
 </body>
