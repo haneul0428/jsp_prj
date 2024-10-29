@@ -43,71 +43,74 @@ EL: ${ param.uploader }<br/>
  --%>
 요청방식: <%= request.getMethod() %><br/>
 <%
-	//1. 업로드 파일을 저장할 디렉토리를 생성하고 경로 얻기
- 	File saveDir = new File("C:/dev/workspace/jsp_prj/src/main/webapp/upload");
+	boolean uploadFlag = (boolean)session.getAttribute("uploadFlag");
+	if(!uploadFlag){
 	
-	//2. 업로드할 파일의 최대 크기 설정 (byte > KByte > MByte > GByte > TByte)
-	int maxSize = 1024 * 1024 * 10; //00MByte까지의 파일만 업로드 가능, 초과시 예외발생 //byte * KByte * ? MByte
-	int uploadSize = 1024 * 1024 * 600;	//큰파일도 업로드는 가능하도록 설정
-	
-	//3. File upload Component를 생성 - 생성과 동시에 파일이 업로드 됨
-	try{
-		MultipartRequest mr = new MultipartRequest(request, saveDir.getAbsolutePath(), 
+		//1. 업로드 파일을 저장할 디렉토리를 생성하고 경로 얻기
+	 	File saveDir = new File("C:/dev/workspace/jsp_prj/src/main/webapp/upload");
+		
+		//2. 업로드할 파일의 최대 크기 설정 (byte > KByte > MByte > GByte > TByte)
+		int maxSize = 1024 * 1024 * 10; //00MByte까지의 파일만 업로드 가능, 초과시 예외발생 //byte * KByte * ? MByte
+		int uploadSize = 1024 * 1024 * 600;	//큰파일도 업로드는 가능하도록 설정
+		
+		//3. File upload Component를 생성 - 생성과 동시에 파일이 업로드 됨
+		try{
+			MultipartRequest mr = new MultipartRequest(request, saveDir.getAbsolutePath(), 
 											uploadSize, "UTF-8", new DefaultFileRenamePolicy());
+			
+			//web parameter 받기 --> request가 아닌 MultipartRequest 파일 컴포넌트를 사용해 parameter를 받아야 함
+			String uploader = mr.getParameter("uploader");
+			String[] extArr = mr.getParameterValues("ext");
+			
+			//파일명 처리
+			//1. 원본 파일명
+			String originName = mr.getOriginalFileName("upfile");
+			
+			//2. 변경된 파일명
+			String fileSysName = mr.getFilesystemName("upfile");
+			
+			//업로드된 파일이 최대 크기를 초과하는지 체크
+			File uploadFile = new File(saveDir.getAbsolutePath() + "/" + fileSysName);
+			
+			if(uploadFile.length() > maxSize){	//업로드된 파일크기가 10MByte 초과시
+				uploadFile.delete();	//업로드된 파일 삭제
+			%>
+				<%= originName %>은 10MByte(<%= maxSize %>byte)를 초과합니다.<br/>
+				업로드 파일의 크기 내의 파일로 변환해 업로드 해주세요.<br/>
+				<a href="javascript:history.back()">뒤로</a>
+			<%
+			} else {
+			%>
+			<h2>파일 업로드 성공</h2>
+			<div>
+				업로더: <%= uploader %><br/>
+				확장자: <%
+						if(extArr == null){	//확장자가 없다면
+							out.print("선택 확장자 없음");
+						} else {
+							for(String tempExt : extArr){
+								out.print(tempExt);
+								out.print("&nbsp;");
+							}//f
+						}//if~el
+						%>
+				<br/>
+				원본 파일명:<%= originName %><br/>
+				변경된 파일명: <%= fileSysName %><br/> 
+				<%-- <img src="http://localhost/jsp_prj/upload/<%= fileSysName %>"/> --%>
+				<a href="file_list.jsp">파일 리스트 보기</a>
+			</div>
+			<%
+			}//if~el	//위 uploadFile.length() > maxSize
+		}catch(Exception e){	//파일 크기가 클 경우, 예외가 처리되지 않음
+			e.printStackTrace();
+			%>
+			파일 업로드 실패!
+			<%
+		}//ty~ca
 		
-		//web parameter 받기 --> request가 아닌 MultipartRequest 파일 컴포넌트를 사용해 parameter를 받아야 함
-		String uploader = mr.getParameter("uploader");
-		String[] extArr = mr.getParameterValues("ext");
-		
-		//파일명 처리
-		//1. 원본 파일명
-		String originName = mr.getOriginalFileName("upfile");
-		
-		//2. 변경된 파일명
-		String fileSysName = mr.getFilesystemName("upfile");
-		
-		//업로드된 파일이 최대 크기를 초과하는지 체크
-		File uploadFile = new File(saveDir.getAbsolutePath() + "/" + fileSysName);
-		
-		if(uploadFile.length() > maxSize){	//업로드된 파일크기가 10MByte 초과시
-			uploadFile.delete();	//업로드된 파일 삭제
-		%>
-			<%= originName %>은 10MByte(<%= maxSize %>byte)를 초과합니다.<br/>
-			업로드 파일의 크기 내의 파일로 변환해 업로드 해주세요.<br/>
-			<a href="javascript:history.back()">뒤로</a>
-		<%
-		} else {
-		
-		%>
-		<h2>파일 업로드 성공</h2>
-		<div>
-			업로더: <%= uploader %><br/>
-			확장자: <%
-					if(extArr == null){	//확장자가 없다면
-						out.print("선택 확장자 없음");
-					} else {
-						for(String tempExt : extArr){
-							out.print(tempExt);
-							out.print("&nbsp;");
-						}//f
-					}//if~el
-					%>
-			<br/>
-			원본 파일명:<%= originName %><br/>
-			변경된 파일명: <%= fileSysName %><br/> 
-			<%-- <img src="http://localhost/jsp_prj/upload/<%= fileSysName %>"/> --%>
-			<a href="file_list.jsp">파일 리스트 보기</a>
-		</div>
-		<%
-		}//if~el	//위 uploadFile.length() > maxSize
-	}catch(Exception e){	//파일 크기가 클 경우, 예외가 처리되지 않음
-		e.printStackTrace();
-		%>
-		파일 업로드 실패!
-		<%
-	}//ty~ca
-	//4. 
-	
+		session.setAttribute("uploadFlag", true);
+	}//if	//!uploadFlag
 %>
  
 </div>
