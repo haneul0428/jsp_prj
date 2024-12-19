@@ -14,11 +14,11 @@
     <meta name="generator" content="Hugo 0.122.0">
     <title>음료 관리 페이지</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
-    <link rel="stylesheet" href="http://localhost/jsp_prj/admin/common/css/project_main.css">
+    <link rel="stylesheet" href="http://192.168.10.214/jsp_prj/admin/common/css/project_main.css">
     <!-- Custom styles for this template -->
-    <link href="http://localhost/jsp_prj/admin/common/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://192.168.10.214/jsp_prj/admin/common/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="http://localhost/jsp_prj/admin/common/css/dashboard.css" rel="stylesheet">
+    <link href="http://192.168.10.214/jsp_prj/admin/common/css/dashboard.css" rel="stylesheet">
     
 	<!-- bootstrap -->
     <link href="bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -139,37 +139,37 @@ function showTab(tab) {
                 <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
                     <ul class="nav nav-pills flex-column">
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center gap-2" aria-current="page" href="http://localhost/jsp_prj/admin/dashboard/dashboard.jsp">
+                            <a class="nav-link d-flex align-items-center gap-2" aria-current="page" href="http://192.168.10.214/jsp_prj/admin/dashboard/dashboard.jsp">
                                 <i class="bi bi-house"></i>
                                 관리자 대시보드
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center gap-2 active" href="http://localhost/jsp_prj/admin/menu/getListDrink.jsp">
+                            <a class="nav-link d-flex align-items-center gap-2 active" href="http://192.168.10.214/jsp_prj/admin/menu/getListDrink.jsp">
                                 <svg class="bi"><use xlink:href="#cup-hot"/></svg>
                                 음료 관리
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center gap-2" href="http://localhost/jsp_prj/admin/menu/getListDessertIcecream.jsp">
+                            <a class="nav-link d-flex align-items-center gap-2" href="http://192.168.10.214/jsp_prj/admin/menu/getListDessertIcecream.jsp">
                             	<svg class="bi"><use xlink:href="#cake"/></svg>
                                 디저트&아이스크림 관리
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center gap-2" href="http://localhost/jsp_prj/admin/order/getListOrder.jsp">
+                            <a class="nav-link d-flex align-items-center gap-2" href="http://192.168.10.214/jsp_prj/admin/order/getListOrder.jsp">
                                 <i class="bi bi-cart"></i>
                                 	주문 관리
                             </a>                                                        
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center gap-2" href="http://localhost/jsp_prj/admin/member/getListMember.jsp">
+                            <a class="nav-link d-flex align-items-center gap-2" href="http://192.168.10.214/jsp_prj/admin/member/getListMember.jsp">
                                 <i class="bi bi-people"></i>
                                 회원 관리
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center gap-2" href="http://localhost/jsp_prj/admin/voc/getListCustomSound.jsp">
+                            <a class="nav-link d-flex align-items-center gap-2" href="http://192.168.10.214/jsp_prj/admin/voc/getListCustomSound.jsp">
 								<i class="bi bi-file-earmark-bar-graph"></i>
                                 고객의 소리
                             </a>
@@ -215,42 +215,42 @@ function showTab(tab) {
         <tbody>
             <tr>
                 <td>1</td>
-                <td><img id="drinkImg" src="http://localhost/jsp_prj/admin/common/image/더블에스프레소-2-450x588.png">
+                <td><img id="drinkImg" src="http://192.168.10.214/jsp_prj/admin/common/image/더블에스프레소-2-450x588.png">
                 <a href="updateDrink.jsp">더블에스프레소</a></td>
                 <td>1,500</td>
                 <td>커피</td>
             </tr>
             <tr>
                 <td>2</td>
-                <td><img id="drinkImg" src="http://localhost/jsp_prj/admin/common/image/HOT-앗메리카노-450x588.png">
+                <td><img id="drinkImg" src="http://192.168.10.214/jsp_prj/admin/common/image/HOT-앗메리카노-450x588.png">
                 <a href="updateDrink.jsp">아메리카노(HOT)</a></td>
                 <td>1,500</td>
                 <td>커피</td>
             </tr>
             <tr>
                 <td>3</td>
-                <td><img id="drinkImg" src="http://localhost/jsp_prj/admin/common/image/ICED-앗메리카노-450x588.png">
+                <td><img id="drinkImg" src="http://192.168.10.214/jsp_prj/admin/common/image/ICED-앗메리카노-450x588.png">
                 <a href="updateDrink.jsp">아메리카노(ICED)</a></td>
                 <td>2,000</td>
                 <td>커피</td>
             </tr>
             <tr>
                 <td>4</td>
-                <td><img id="drinkImg" src="http://localhost/jsp_prj/admin/common/image/HOT-원조커피-450x588.png">
+                <td><img id="drinkImg" src="http://192.168.10.214/jsp_prj/admin/common/image/HOT-원조커피-450x588.png">
                 <a href="updateDrink.jsp">원조커피(HOT)</a></td>
                 <td>2,500</td>
                 <td>커피</td>
             </tr>
             <tr>
                 <td>5</td>
-                <td><img id="drinkImg" src="http://localhost/jsp_prj/admin/common/image/슈크리미-라떼HOT-450x588.png">
+                <td><img id="drinkImg" src="http://192.168.10.214/jsp_prj/admin/common/image/슈크리미-라떼HOT-450x588.png">
                 <a href="updateDrink.jsp">슈크리미 라떼(HOT)</a></td>
                 <td>4,000</td>
                 <td>커피</td>
             </tr>
             <tr>
                 <td>6</td>
-                <td><img id="drinkImg" src="http://localhost/jsp_prj/admin/common/image/슈크리미-라떼ICED-450x588.png">
+                <td><img id="drinkImg" src="http://192.168.10.214/jsp_prj/admin/common/image/슈크리미-라떼ICED-450x588.png">
                 <a href="updateDrink.jsp">슈크리미 라떼(ICED)</a></td>
                 <td>4,000</td>
                 <td>커피</td>
@@ -270,42 +270,42 @@ function showTab(tab) {
         <tbody>
             <tr>
                 <td>1</td>
-                <td><img id="drinkImg" src="http://localhost/jsp_prj/admin/common/image/뱅쇼hot_thumb-450x588.png">
+                <td><img id="drinkImg" src="http://192.168.10.214/jsp_prj/admin/common/image/뱅쇼hot_thumb-450x588.png">
                 <a href="updateDrink.jsp">뱅쇼(HOT)</a></td>
                 <td>3,800</td>
                 <td>음료</td>
             </tr>
             <tr>
                 <td>2</td>
-                <td><img id="drinkImg" src="http://localhost/jsp_prj/admin/common/image/뱅쇼iced_thumb-450x588.png">
+                <td><img id="drinkImg" src="http://192.168.10.214/jsp_prj/admin/common/image/뱅쇼iced_thumb-450x588.png">
                 <a href="updateDrink.jsp">뱅쇼(ICED)</a></td>
                 <td>3,800</td>
                 <td>음료</td>
             </tr>
             <tr>
                 <td>3</td>
-                <td><img id="drinkImg" src="http://localhost/jsp_prj/admin/common/image/우리쌀라떼-핫-450x588.png">
+                <td><img id="drinkImg" src="http://192.168.10.214/jsp_prj/admin/common/image/우리쌀라떼-핫-450x588.png">
                 <a href="updateDrink.jsp">우리쌀 라떼(HOT)</a></td>
                 <td>3,500</td>
                 <td>음료</td>
             </tr>
             <tr>
                 <td>4</td>
-                <td><img id="drinkImg" src="http://localhost/jsp_prj/admin/common/image/우리쌀라떼-아이스-450x588.png">
+                <td><img id="drinkImg" src="http://192.168.10.214/jsp_prj/admin/common/image/우리쌀라떼-아이스-450x588.png">
                 <a href="updateDrink.jsp">우리쌀 라떼(HOT)</a></td>
                 <td>4,000</td>
                 <td>음료</td>
             </tr>
             <tr>
                 <td>5</td>
-                <td><img id="drinkImg" src="http://localhost/jsp_prj/admin/common/image/우리쌀쉐이크-450x588.png">
+                <td><img id="drinkImg" src="http://192.168.10.214/jsp_prj/admin/common/image/우리쌀쉐이크-450x588.png">
                 <a href="updateDrink.jsp">우리쌀 라떼(HOT)</a></td>
                 <td>4,000</td>
                 <td>음료</td>
             </tr>
             <tr>
                 <td>6</td>
-                <td><img id="drinkImg" src="http://localhost/jsp_prj/admin/common/image/구아바크림주스-450x588.png">
+                <td><img id="drinkImg" src="http://192.168.10.214/jsp_prj/admin/common/image/구아바크림주스-450x588.png">
                 <a href="updateDrink.jsp">우리쌀 라떼(HOT)</a></td>
                 <td>4,300</td>
                 <td>음료</td>

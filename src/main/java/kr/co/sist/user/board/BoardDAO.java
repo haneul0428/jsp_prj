@@ -300,8 +300,16 @@ public class BoardDAO {
 			
 			//쿼리문 생성
 			StringBuilder deleteBoard = new StringBuilder();
+			/*	//댓글이 존재하지 않으면 삭제하면 됨
+			 * 	//모든 댓글의 소유권이 작성자에게 있으면, 테이블 생성 시 on delete cascade 옵션을 사용
 			deleteBoard.append("	delete from board	")
-						.append("	where	num=? and writer=?	"); 
+						.append("	where	num=? and writer=?	");
+			*/ 
+			
+			//댓글의 소유권이 원글 작성자에게 없으면, update 수행
+			deleteBoard.append("	update	board	")
+						.append("	set		subject='삭제된 글입니다.', content='사용자에 의해 삭제된 글입니다.', writer='NA'	")
+						.append("	where	num=? and writer=?	");
          
 			pstmt = con.prepareStatement(deleteBoard.toString());
 

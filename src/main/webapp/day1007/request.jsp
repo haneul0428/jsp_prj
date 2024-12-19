@@ -74,7 +74,7 @@ $(function(){
 		%>
 	</li>
 </ul>
-<a href="http://localhost/jsp_prj/day1007/request.jsp?name=kim&age=20&age=21">요청</a>
+<a href="http://192.168.10.214/jsp_prj/day1007/request.jsp?name=kim&age=20&age=21">요청</a>
 <a href="http://192.168.10.214/jsp_prj/day1007/request.jsp?name=kim&age=20&age=21">요청</a>
 <form method="post" action="request.jsp" enctype="application/x-www-form-urlencoded">
 <!-- 자신 페이지를 다시 요청할 때에는 action 속성을 생략할 수 O -->

@@ -60,7 +60,7 @@ $(function(){
 		</tr>
 	</table>
 	</form>
-	<a href="http://localhost/jsp_prj/day1016/forward_frm.jsp">내부</a>
+	<a href="http://192.168.10.214/jsp_prj/day1016/forward_frm.jsp">내부</a>
 	<a href="http://192.168.10.214/jsp_prj/day1016/forward_frm.jsp">외부</a>
 </div>
 

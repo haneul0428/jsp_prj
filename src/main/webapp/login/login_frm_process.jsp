@@ -96,7 +96,7 @@ $(function(){
 	<c:otherwise>
 		<h2>로그인 성공</h2>
 		<script type="text/javascript">
-		location.replace("http://localhost/jsp_prj/index.jsp");
+		location.replace("http://192.168.10.214/jsp_prj/index.jsp");
 		</script>
 	</c:otherwise>
 	</c:choose>

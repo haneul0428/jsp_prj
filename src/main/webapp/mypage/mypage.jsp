@@ -35,7 +35,7 @@ $(function(){
 
 <div id="wrap">
 <div id="header">
-<c:import url="http://localhost/jsp_prj/common/jsp/header.jsp"/>
+<c:import url="http://192.168.10.214/jsp_prj/common/jsp/header.jsp"/>
 </div>
 	<h2>마이페이지</h2>
 </div>

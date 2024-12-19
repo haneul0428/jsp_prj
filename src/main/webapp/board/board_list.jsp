@@ -82,7 +82,7 @@ function loginMove() {
 
 <div id="wrap">
 <div id="header">
-<c:import url="http://localhost/jsp_prj/common/jsp/header.jsp"/>
+<c:import url="http://192.168.10.214/jsp_prj/common/jsp/header.jsp"/>
 </div>
 <div style="width: 970px;">
 	<h2>사용자 자유 게시판</h2>

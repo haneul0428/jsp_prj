@@ -68,7 +68,7 @@ $(function(){
 <div>
     <%-- 요청 링크를 클릭했을 때, nick의 값으로 test, age를 20으로 설정해
         현재 페이지로 요청하는 URL과 Query String을 작성 --%>
-    <a href="http://localhost/jsp_prj/day1017/use_el2.jsp?nick=test&age=20">요청</a>
+    <a href="http://192.168.10.214/jsp_prj/day1017/use_el2.jsp?nick=test&age=20">요청</a>
     <a href="use_el2.jsp?nick=test&age=20">요청</a><%-- 같은 directory에 존재한다면 위 주소는 생략해도 O --%>
 </div>
 

@@ -33,19 +33,20 @@ $(function(){
 <body>
 
 <div id="wrap">
-	<a href="http://localhost/jsp_prj/member/join_frm.jsp">회원가입</a>
+	<a href="http://192.168.10.214/jsp_prj/member/join_frm.jsp">회원가입</a>
 	
 	<%-- <c:if>나 <c:choose> 중 하나를 사용 --%>
 	<c:choose>
 		<c:when test="${ empty sessionScope.userData }">
-			<a href="http://localhost/jsp_prj/login/login_frm.jsp">로그인</a>
+			<a href="http://192.168.10.214/jsp_prj/login/login_frm.jsp">로그인</a>
 		</c:when>
 		<c:otherwise>
-			<a href="http://localhost/jsp_prj/login/login_frm.jsp">로그아웃</a>
-			<a href="http://localhost/jsp_prj/mypage/mypage.jsp" title="마이페이지"><c:out value="${ userData.id }(${ userData.name })"/>님 로그인 중</a>
+			<a href="http://192.168.10.214/jsp_prj/login/login_frm.jsp">로그아웃</a>
+			<a href="http://192.168.10.214/jsp_prj/mypage/mypage.jsp" title="마이페이지"><c:out value="${ userData.id }(${ userData.name })"/>님 로그인 중</a>
+			<a href="http://192.168.10.214/jsp_prj/bookmark_rest/rest_map.jsp">식당리스트</a>
 		</c:otherwise>
 	</c:choose>
-	<a href="http://localhost/jsp_prj/board/board_list.jsp">게시판</a>
+	<a href="http://192.168.10.214/jsp_prj/board/board_list.jsp">게시판</a>
 </div>
 
 </body>

@@ -4,7 +4,7 @@
     %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:if test="${ empty userData }">
-<c:redirect url="http://localhost/jsp_prj/index.jsp"/>
+<c:redirect url="http://192.168.10.214/jsp_prj/index.jsp"/>
 </c:if>
 <% 
 	String remoteIp = request.getRemoteAddr();

@@ -46,8 +46,9 @@ EL: ${ param.uploader }<br/>
 	boolean uploadFlag = (boolean)session.getAttribute("uploadFlag");
 	if(!uploadFlag){
 	
-		//1. 업로드 파일을 저장할 디렉토리를 생성하고 경로 얻기
-	 	File saveDir = new File("C:/dev/workspace/jsp_prj/src/main/webapp/upload");
+		//1. 업로드 파일을 저장할 디렉토리를 생성하고 경로 얻기	//웹서비스를 하게되는 디렉토리로 바뀌어야 함
+	 	//File saveDir = new File("C:/dev/workspace/jsp_prj/src/main/webapp/upload");	//개발 경로
+	 	File saveDir = new File("C:/web_home/jsp_prj/upload");	//서비스하는 경로
 		
 		//2. 업로드할 파일의 최대 크기 설정 (byte > KByte > MByte > GByte > TByte)
 		int maxSize = 1024 * 1024 * 10; //00MByte까지의 파일만 업로드 가능, 초과시 예외발생 //byte * KByte * ? MByte
@@ -97,7 +98,7 @@ EL: ${ param.uploader }<br/>
 				<br/>
 				원본 파일명:<%= originName %><br/>
 				변경된 파일명: <%= fileSysName %><br/> 
-				<%-- <img src="http://localhost/jsp_prj/upload/<%= fileSysName %>"/> --%>
+				<%-- <img src="http://192.168.10.214/jsp_prj/upload/<%= fileSysName %>"/> --%>
 				<a href="file_list.jsp">파일 리스트 보기</a>
 			</div>
 			<%

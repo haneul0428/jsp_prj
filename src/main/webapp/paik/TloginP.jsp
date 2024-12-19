@@ -9,25 +9,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
-<link rel="shortcut icon" type="image/x-icon" href="http://localhost/jsp_prj/paik/images/favicon.png">
+<link rel="shortcut icon" type="image/x-icon" href="http://192.168.10.214/jsp_prj/paik/images/favicon.png">
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-<title>빽다방</title>
+<title>빽스커피</title>
 
 <style type="text/css">
 
 </style>
 
-<link rel="stylesheet" type="text/css" href="http://localhost/jsp_prj/paik/css/paik_kl.css">
-<link rel="stylesheet" type="text/css" href="http://localhost/jsp_prj/paik/css/paik_normal.css">
-<link rel="stylesheet" type="text/css" href="http://localhost/jsp_prj/paik/css/paik_extend.css">
+<link rel="stylesheet" type="text/css" href="http://192.168.10.214/jsp_prj/paik/css/paik_kl.css">
+<link rel="stylesheet" type="text/css" href="http://192.168.10.214/jsp_prj/paik/css/paik_normal.css">
+<link rel="stylesheet" type="text/css" href="http://192.168.10.214/jsp_prj/paik/css/paik_extend.css">
 
 <link rel='stylesheet' id='theme-css-style-css'  href='https://paikdabang.com/wp-content/themes/paikdabang/assets/css/style.css?ver=4.9.4' type='text/css' media='all' />
 
-<link rel="icon" href="http://localhost/jsp_prj/paik/images/favicon32x32.png" sizes="32x32" />
-<link rel="icon" href="http://localhost/jsp_prj/paik/images/favicon192x192.png" sizes="192x192" />
-<link rel="apple-touch-icon-precomposed" href="http://localhost/jsp_prj/paik/images/favicon180x180.png" />
-<meta name="msapplication-TileImage" content="http://localhost/jsp_prj/paik/images/favicon270x270.png" />
+<link rel="icon" href="http://192.168.10.214/jsp_prj/paik/images/favicon32x32.png" sizes="32x32" />
+<link rel="icon" href="http://192.168.10.214/jsp_prj/paik/images/favicon192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://192.168.10.214/jsp_prj/paik/images/favicon180x180.png" />
+<meta name="msapplication-TileImage" content="http://192.168.10.214/jsp_prj/paik/images/favicon270x270.png" />
 
 <!-- bootstrap CDN -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -48,10 +48,10 @@
 			</ul>
 			<div class="nav_wrap">
 				<a href="" class="logo">
-					<img src="http://localhost/jsp_prj/prac/images/logo.png" alt="빽다방">
+					<img src="http://192.168.10.214/jsp_prj/prac/images/logo.png" alt="빽다방">
 				</a>
 				<a href="" class="logo light">
-					<img src="http://localhost/jsp_prj/prac/images/logo-2.png" alt="빽다방">
+					<img src="http://192.168.10.214/jsp_prj/prac/images/logo-2.png" alt="빽다방">
 				</a>
 				<div class="nav">
 					<div class="nav-icon"><div></div></div>

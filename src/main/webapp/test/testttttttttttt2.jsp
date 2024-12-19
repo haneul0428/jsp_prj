@@ -7,11 +7,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
-<link rel="shortcut icon" type="image/x-icon" href="http://localhost/paik_prj/common/images/favicon.png">
+<link rel="shortcut icon" type="image/x-icon" href="http://192.168.10.214/jsp_prj/paik_prj/common/images/favicon.png">
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<title>빽다방 | 신메뉴</title>
+<title>빽스커피 | 신메뉴</title>
 
 <style type="text/css">
     .swiper-container {
@@ -67,16 +67,16 @@
     }
 </style>
 
-<link rel="stylesheet" type="text/css" href="http://localhost/paik_prj/common/css/paik_kl.css">
-<link rel="stylesheet" type="text/css" href="http://localhost/paik_prj/common/css/paik_normal.css">
-<link rel="stylesheet" type="text/css" href="http://localhost/paik_prj/common/css/paik_extend.css">
+<link rel="stylesheet" type="text/css" href="http://192.168.10.214/jsp_prj/paik_prj/common/css/paik_kl.css">
+<link rel="stylesheet" type="text/css" href="http://192.168.10.214/jsp_prj/paik_prj/common/css/paik_normal.css">
+<link rel="stylesheet" type="text/css" href="http://192.168.10.214/jsp_prj/paik_prj/common/css/paik_extend.css">
 
 <link rel='stylesheet' id='theme-css-style-css' href='https://paikdabang.com/wp-content/themes/paikdabang/assets/css/style.css?ver=4.9.4' type='text/css' media='all' />
 
-<link rel="icon" href="http://localhost/paik_prj/common/images/favicon32x32.png" sizes="32x32" />
-<link rel="icon" href="http://localhost/paik_prj/common/images/favicon192x192.png" sizes="192x192" />
-<link rel="apple-touch-icon-precomposed" href="http://localhost/paik_prj/common/images/favicon180x180.png" />
-<meta name="msapplication-TileImage" content="http://localhost/paik_prj/common/images/favicon270x270.png" />
+<link rel="icon" href="http://192.168.10.214/jsp_prj/paik_prj/common/images/favicon32x32.png" sizes="32x32" />
+<link rel="icon" href="http://192.168.10.214/jsp_prj/paik_prj/common/images/favicon192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://192.168.10.214/jsp_prj/paik_prj/common/images/favicon180x180.png" />
+<meta name="msapplication-TileImage" content="http://192.168.10.214/jsp_prj/paik_prj/common/images/favicon270x270.png" />
 
 <!-- bootstrap CDN -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -146,7 +146,7 @@ $(document).ready(function() {
 
 <div id="wrap">
 <div id="header">
-<jsp:include page="header.jsp"/>
+<%-- <jsp:include page="header.jsp"/> --%>
 </div>
 
 <div id="content-wrap" style="margin-bottom: 100px;">
@@ -157,10 +157,10 @@ $(document).ready(function() {
         <div class="tabMenu">
             <ul class="pageTab">
                 <li class="on"><a href="">신메뉴</a></li>
-                <li><a href="http://localhost/paik_prj/paik/coffeMenuPage.jsp">커피</a></li>
-                <li><a href="http://localhost/paik_prj/paik/drinkMenuPage.jsp">음료</a></li>
-                <li><a href="http://localhost/paik_prj/paik/icecreamDessertMenuPage.jsp">아이스크림/디저트</a></li>
-                <li><a href="http://localhost/paik_prj/paik/paikccinoPage.jsp">빽스치노</a></li>
+                <li><a href="http://192.168.10.214/jsp_prj/paik_prj/paik/coffeMenuPage.jsp">커피</a></li>
+                <li><a href="http://192.168.10.214/jsp_prj/paik_prj/paik/drinkMenuPage.jsp">음료</a></li>
+                <li><a href="http://192.168.10.214/jsp_prj/paik_prj/paik/icecreamDessertMenuPage.jsp">아이스크림/디저트</a></li>
+                <li><a href="http://192.168.10.214/jsp_prj/paik_prj/paik/paikccinoPage.jsp">빽스치노</a></li>
             </ul>
         </div>
     </div>
@@ -209,7 +209,7 @@ $(document).ready(function() {
 </div>
 
 <div id="footer">
-<jsp:include page="footer.jsp"/>
+<%-- <jsp:include page="footer.jsp"/> --%>
 </div>
 </div>
 

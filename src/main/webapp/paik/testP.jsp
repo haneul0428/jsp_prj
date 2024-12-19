@@ -8,7 +8,7 @@
 <meta charset="UTF-8">
 <title>test</title>
 
-<link rel="shortcut icon" href="http://192.168.10.214/paik_prj/common/images/favicon.png">
+<link rel="shortcut icon" href="http://192.168.10.214/jsp_prj/paik_prj/common/images/favicon.png">
 <link rel="stylesheet" type="text/css" href="http://192.168.10.214/jsp_prj/common/css/main_20240911.css">
 
 <!-- bootstrap CDN 시작 -->
@@ -63,7 +63,7 @@
 		background: #fff;
 		z-index: 1000;
 		white-space: nowrap; /* 내용이 한 줄로 유지되도록 */
-		background: url('http://localhost/jsp_prj/paik/images/sub_menu_img.png'); /* 배경 이미지 설정 */
+		background: url('http://192.168.10.214/jsp_prj/paik/images/sub_menu_img.png'); /* 배경 이미지 설정 */
 	}
 
 	.sub_menu li {
@@ -102,7 +102,7 @@ $(function(){
 			</ul>
 			<div class="nav_left">
 				<a href="">
-					<img src="http://localhost/jsp_prj/paik/images/logo.png" alt="빽다방 로고">
+					<img src="http://192.168.10.214/jsp_prj/paik/images/logo.png" alt="빽다방 로고">
 				</a>
 			</div>
 			<div class="nav">

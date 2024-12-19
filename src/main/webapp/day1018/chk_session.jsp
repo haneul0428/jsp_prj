@@ -3,5 +3,5 @@
 %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:if test="${ empty user_id }">
-	<c:redirect url="http://localhost/jsp_prj/day1018/create_session.jsp"/>
+	<c:redirect url="http://192.168.10.214/jsp_prj/day1018/create_session.jsp"/>
 </c:if>

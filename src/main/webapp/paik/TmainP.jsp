@@ -9,25 +9,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
-<link rel="shortcut icon" type="image/x-icon" href="http://localhost/jsp_prj/paik/images/favicon.png">
+<link rel="shortcut icon" type="image/x-icon" href="http://192.168.10.214/jsp_prj/paik/images/favicon.png">
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-<title>빽다방</title>
+<title>빽스커피</title>
 
 <style type="text/css">
 
 </style>
 
-<link rel="stylesheet" type="text/css" href="http://localhost/jsp_prj/paik/css/paik_kl.css">
-<link rel="stylesheet" type="text/css" href="http://localhost/jsp_prj/paik/css/paik_normal.css">
-<link rel="stylesheet" type="text/css" href="http://localhost/jsp_prj/paik/css/paik_extend.css">
+<link rel="stylesheet" type="text/css" href="http://192.168.10.214/jsp_prj/paik/css/paik_kl.css">
+<link rel="stylesheet" type="text/css" href="http://192.168.10.214/jsp_prj/paik/css/paik_normal.css">
+<link rel="stylesheet" type="text/css" href="http://192.168.10.214/jsp_prj/paik/css/paik_extend.css">
 
 <link rel='stylesheet' id='theme-css-style-css'  href='https://paikdabang.com/wp-content/themes/paikdabang/assets/css/style.css?ver=4.9.4' type='text/css' media='all' />
 
-<link rel="icon" href="http://localhost/jsp_prj/paik/images/favicon32x32.png" sizes="32x32" />
-<link rel="icon" href="http://localhost/jsp_prj/paik/images/favicon192x192.png" sizes="192x192" />
-<link rel="apple-touch-icon-precomposed" href="http://localhost/jsp_prj/paik/images/favicon180x180.png" />
-<meta name="msapplication-TileImage" content="http://localhost/jsp_prj/paik/images/favicon270x270.png" />
+<link rel="icon" href="http://192.168.10.214/jsp_prj/paik/images/favicon32x32.png" sizes="32x32" />
+<link rel="icon" href="http://192.168.10.214/jsp_prj/paik/images/favicon192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://192.168.10.214/jsp_prj/paik/images/favicon180x180.png" />
+<meta name="msapplication-TileImage" content="http://192.168.10.214/jsp_prj/paik/images/favicon270x270.png" />
 
 <!-- bootstrap CDN -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -48,10 +48,10 @@
 			</ul>
 			<div class="nav_wrap">
 				<a href="" class="logo">
-					<img src="http://localhost/jsp_prj/paik/images/logo.png" alt="빽다방">
+					<img src="http://192.168.10.214/jsp_prj/paik/images/logo.png" alt="빽다방">
 				</a>
 				<a href="" class="logo light">
-					<img src="http://localhost/jsp_prj/paik/images/logo-2.png" alt="빽다방">
+					<img src="http://192.168.10.214/jsp_prj/paik/images/logo-2.png" alt="빽다방">
 				</a>
 				<div class="nav">
 					<div class="nav-icon"><div></div></div>
@@ -143,23 +143,23 @@
 <div class="main_visual_wrap">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
-        	<img src="http://localhost/jsp_prj/paik/images/swipe_slider01.jpg" alt="">
+        	<img src="http://192.168.10.214/jsp_prj/paik/images/swipe_slider01.jpg" alt="">
         </div>
 		
         <div class="swiper-slide">
-        	<img src="http://localhost/jsp_prj/paik/images/swipe_slider02.jpg" alt="">
+        	<img src="http://192.168.10.214/jsp_prj/paik/images/swipe_slider02.jpg" alt="">
         </div>
 		
         <div class="swiper-slide">
-        	<img src="http://localhost/jsp_prj/paik/images/swipe_slider03.png" alt="">
+        	<img src="http://192.168.10.214/jsp_prj/paik/images/swipe_slider03.png" alt="">
         </div>
 		
         <div class="swiper-slide">
-        	<img src="http://localhost/jsp_prj/paik/images/swipe_slider04.jpg" alt="">
+        	<img src="http://192.168.10.214/jsp_prj/paik/images/swipe_slider04.jpg" alt="">
         </div>
 		
         <div class="swiper-slide">
-        	<img src="http://localhost/jsp_prj/paik/images/swipe_slider05.jpg" alt="">
+        	<img src="http://192.168.10.214/jsp_prj/paik/images/swipe_slider05.jpg" alt="">
         </div>
 	</div>
     <div class="swiper-pagination"></div>
@@ -208,8 +208,8 @@
 				<dt>FRESH<br />COFFEE</dt>
 				<dd>신선한 뉴크롭 원두를 사용하여<br />추출한 커피메뉴!</dd>
 			</dl>
-			<img class="pc" src="http://localhost/jsp_prj/paik/images/main_sec2.jpg" alt="">
-			<img class="mo" src="http://localhost/jsp_prj/paik/images/mmain_sec2.jpg" alt="">
+			<img class="pc" src="http://192.168.10.214/jsp_prj/paik/images/main_sec2.jpg" alt="">
+			<img class="mo" src="http://192.168.10.214/jsp_prj/paik/images/mmain_sec2.jpg" alt="">
 		</a>
 		<a class="view_btn" href=""><span>커피 메뉴 보러가기</span></a>
 	</section>
@@ -221,8 +221,8 @@
 				<dt>VARIOUS<br />BEVERAGE</dt>
 				<dd>에이드, 티, 주스 등 취향대로<br />골라 먹는 즐거움!</dd>
 			</dl>
-			<img class="pc" src="http://localhost/jsp_prj/paik/images/main_sec3.jpg" alt="">
-			<img class="mo" src="http://localhost/jsp_prj/paik/images/mmain_sec3.jpg" alt="">
+			<img class="pc" src="http://192.168.10.214/jsp_prj/paik/images/main_sec3.jpg" alt="">
+			<img class="mo" src="http://192.168.10.214/jsp_prj/paik/images/mmain_sec3.jpg" alt="">
 		</a>
 		<a class="view_btn" href=""><span>음료 메뉴 보러가기</span></a>
 	</div>
@@ -232,8 +232,8 @@
 				<dt>SWEET<br />PAIK'S CCINO</dt>
 				<dd>달콤 시원한 빽다방<br />시그니처 메뉴!</dd>
 			</dl>
-			<img class="pc"src="http://localhost/jsp_prj/paik/images/main_sec4.jpg" alt="">
-			<img class="mo"src="http://localhost/jsp_prj/paik/images/mmain_sec4.jpg" alt="">
+			<img class="pc"src="http://192.168.10.214/jsp_prj/paik/images/main_sec4.jpg" alt="">
+			<img class="mo"src="http://192.168.10.214/jsp_prj/paik/images/mmain_sec4.jpg" alt="">
 		</a>
 		<a class="view_btn" href=""><span>빽스치노 메뉴 보러가기</span></a>
 	</div>
@@ -246,8 +246,8 @@
 				<dt>TASTY<br />ICE CREAM /<br />DESSERT</dt>
 				<dd>달콤한 아이스크림부터<br />든든한 브레드까지!</dd>
 			</dl>
-			<img class="pc" src="http://localhost/jsp_prj/paik/images/main_sec5.jpg" alt="">
-			<img class="mo" src="http://localhost/jsp_prj/paik/images/swipe_slider05.jpg" alt="">
+			<img class="pc" src="http://192.168.10.214/jsp_prj/paik/images/main_sec5.jpg" alt="">
+			<img class="mo" src="http://192.168.10.214/jsp_prj/paik/images/swipe_slider05.jpg" alt="">
 		</a>
 		<a class="view_btn" href=""><span>아이스크림/디저트 메뉴 보러가기</span></a>
     </div>

@@ -79,37 +79,37 @@
                 <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
                     <ul class="nav nav-pills flex-column">
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="http://localhost/jsp_prj/admin/dashboard/dashboard.jsp">
+                            <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="http://192.168.10.214/jsp_prj/admin/dashboard/dashboard.jsp">
                                 <i class="bi bi-house"></i>
                                 관리자 대시보드
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center gap-2" href="http://localhost/jsp_prj/admin/menu/getListDrink.jsp">
+                            <a class="nav-link d-flex align-items-center gap-2" href="http://192.168.10.214/jsp_prj/admin/menu/getListDrink.jsp">
                                 <svg class="bi"><use xlink:href="#cup-hot"/></svg>
                                 음료 관리
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center gap-2" href="http://localhost/jsp_prj/admin/menu/getListDessertIcecream.jsp">
+                            <a class="nav-link d-flex align-items-center gap-2" href="http://192.168.10.214/jsp_prj/admin/menu/getListDessertIcecream.jsp">
                             	<svg class="bi"><use xlink:href="#cake"/></svg>
                                 디저트&아이스크림 관리
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center gap-2" href="http://localhost/jsp_prj/admin/order/getListOrder.jsp">
+                            <a class="nav-link d-flex align-items-center gap-2" href="http://192.168.10.214/jsp_prj/admin/order/getListOrder.jsp">
                                 <i class="bi bi-cart"></i>
                                 	주문 관리
                             </a>                                                        
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center gap-2" href="http://localhost/jsp_prj/admin/member/getListMember.jsp">
+                            <a class="nav-link d-flex align-items-center gap-2" href="http://192.168.10.214/jsp_prj/admin/member/getListMember.jsp">
                                 <i class="bi bi-people"></i>
                                 회원 관리
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center gap-2" href="http://localhost/jsp_prj/admin/voc/getListCustomSound.jsp">
+                            <a class="nav-link d-flex align-items-center gap-2" href="http://192.168.10.214/jsp_prj/admin/voc/getListCustomSound.jsp">
 								<i class="bi bi-file-earmark-bar-graph"></i>
                                 고객의 소리
                             </a>

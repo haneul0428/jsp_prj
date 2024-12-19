@@ -39,7 +39,7 @@ $(function(){
 
 <div id="wrap">
 <div id="header">
-<c:import url="http://localhost/jsp_prj/common/jsp/header.jsp"/>
+<c:import url="http://192.168.10.214/jsp_prj/common/jsp/header.jsp"/>
 </div>
 <jsp:useBean id="wmVO" class="kr.co.sist.user.member.WebMemberVO" scope="page"/>
 <jsp:setProperty property="*" name="wmVO"/>
@@ -79,7 +79,7 @@ $(function(){
 			mDAO.insertWebMember(wmVO);
 			%>
 			<h2>${ param.name }님 회원가입 감사합니다.</h2>
-			<a href="">로그인화면으로 이동</a>
+			<a href="http://192.168.10.214/jsp_prj/login/login_frm.jsp">로그인화면으로 이동</a>
 			<%
 		}//if~el
 	} catch(SQLException se) {
